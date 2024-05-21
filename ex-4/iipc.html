@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IIPC</title>
+    <link rel="stylesheet" href="iipc.css">
+</head>
+
+<body>
+    <h1>IIPC Calculator</h1>
+    <div class="line"></div>
+    <form onsubmit="return validate()" class="form">
+        <table>
+            <tr>
+                <td>
+                    <label for="industry">Name of the Organization </label>
+                </td>
+                <td>
+                    <input type="text" id="industry" required placeholder="name of Organization...">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="consultancy">Nature of Consultancy </label>
+                </td>
+                <td>
+                    <input type="radio" id="testing" name="consultancy" value="testing">
+                    <label for="testing">Testing</label>
+                    <br>
+                    <input type="radio" id="training" name="consultancy" value="training">
+                    <label for="training">Training</label>
+                    <br>
+                    <input type="radio" id="consultancy" name="consultancy" value="consultancy">Consultancy
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="amount">Amount</label>
+                </td>
+                <td>
+                    <input type="text" id="amount" placeholder="amount">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="faculty">Number of faculty involved</label>
+                </td>
+                <td>
+                    <select id="faculty" required>
+                        <option value="" selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                </td>
+            </tr>
+        </table>
+        <input type="submit" class="submit">
+        </div>
+    </form>
+
+    <div class="display" id="output" style="display: none">
+        <table>
+            <tr>
+                <td>
+                    <label>Organization Name</label>
+                </td>
+                <td>
+                    <span id="industry_"></span>    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nature of Consultancy</label>
+                </td>
+                <td>
+                    <span id="cons_"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Amount</label>
+            </td>
+            <td>
+                <span id="amount_"></span>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number of faculty</label>
+                </td>
+                <td>
+                    <span id="faculty_"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Per_Faculty </label>
+                </td>
+                <td>
+                    <span id="per_faculty_"></span>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <script src="iipc.js"></script>
+</body>
+
+</html>
