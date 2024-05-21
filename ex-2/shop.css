@@ -1,0 +1,18 @@
+h3{
+    padding:10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.color:hover{
+   color:white;
+   background-color: black;
+   
+}
+a:link{
+   
+    color:black;
+}
+a:visited{
+   color:white;
+}
+
