@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+      <center>
+        <h1>Student Registeration form</h1>
+        <table>
+          <form onsubmit="return validation()" id="form_action">
+            <tr>
+                <td>    
+                    <label for="rollno" class="label">Roll no.</label>
+                </td>
+                <td>
+                    <input type="text" id="rollno" placeholder="Rollno" onfocus="focusinput(this)">
+                    <div id="rollerror"></div>
+                </td>
+            </tr>
+            <tr>
+              <td><label for="name" class="label">Name</label></td>
+              <td><input type="text" id="name" class="error" placeholder="Name" onfocus="focusinput(this)">
+              <div id="nameerror"></div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female"name="gender" value="female">
+                    <label for="female">Female </label>
+                    <span id="gendererror"style="color:red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="area of interest" class="label">Area of interest</label>
+                </td>
+                <td>
+                    <select id="area of intrest">
+                        <option value="" selected></option>
+                        <option value="FullStack">FullStack developer</option>
+                        <option value="Devops">Devops</option>
+                        <option value="DBMS">DBMS</option>
+                        <option value="Cloud">Cloud</option>
+                    </select>
+                    <span id="aoierror" style="color:red "></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="program" class="label">language known</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="C" name="language" value="c">
+                    <label for="C">C</label><br>
+                    <input type="checkbox" id="C++" name="language" value="c++">
+                    <label for="C++">C++</label><br>
+                    <input type="checkbox" id="Java" name="language" value="java">
+                    <label for="Java">Java</label><br>
+                    <input type="checkbox" id="python" name="language" value="python">
+                    <label for="python">Python</label>
+                    <span id="leo" style="color:red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="phone" class="label" >Mobile no.</lable>
+                </td>
+                <td>
+                    <input type="phone" id="phone" placeholder="phone" onfocus="focusinput(this)">
+                    <div id="phoneerror"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="mail" class="label" >Email</lable>
+                </td>
+                <td>
+                    <input type="email" id="mail" placeholder="email" onfocus="focusinput(this)">
+                    <div id="mailerror"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="password" class="label">password</lable>
+                </td>
+                <td>
+                    <input type="password" id="password" placeholder="password" onfocus="focusinput(this)">
+                    <br>
+                    <input type="checkbox" onclick="showpass()">Show Password
+                    <div id="passworderror"></div>
+                </td>
+            </tr>
+      
+        </table>
+        <input type="submit" value="SUBMIT" class="submit">
+    </form>
+      </center>
+
+
+
+      <script src="form.js"></script>
+    </body>
+</html>
